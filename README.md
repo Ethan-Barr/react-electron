@@ -80,7 +80,6 @@ react-electron/
 - **`src/`**: Contains the React components and stylesheets.
 - **`main.js`**: Electron main process file.
 - **`package.json`**: Project configuration and dependencies.
-- **`postcss.config.js`**: PostCSS configuration file.
 
 ### Built With
 
