@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# React Electron Boilerplate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a boilerplate project that demonstrates how to integrate React with Electron to build a cross-platform desktop application. It provides a preloader component for a better user experience during app loading.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To get started with this project, follow these steps:
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js and npm installed on your machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. Clone the repository to your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/Ethan-Barr/react-electron.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd react-electron
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+### Development
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run the project in development mode:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This command starts the React development server with hot reloading and opens the Electron app with the React app loaded. Any changes you make to the code will automatically be reflected in the app. You will also be able to access the changes on `localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Production
 
-## Learn More
+To build the project for production:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This command builds the React app for production into the `build` directory.
 
-### Code Splitting
+To start the Electron app in production mode:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run electron
+```
 
-### Analyzing the Bundle Size
+### Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+react-electron/
+├── build/
+├── node_modules/
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.css
+│   ├── App.js
+│   ├── index.css
+│   ├── index.js
+│   └── ...
+├── main.js
+└── package.json
+```
 
-### Making a Progressive Web App
+- **`build/`**: Contains the production build of the React app.
+- **`node_modules/`**: Contains the project dependencies.
+- **`public/`**: Contains the HTML template file.
+- **`src/`**: Contains the React components and stylesheets.
+- **`main.js`**: Electron main process file.
+- **`package.json`**: Project configuration and dependencies.
+- **`postcss.config.js`**: PostCSS configuration file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Built With
 
-### Advanced Configuration
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces.
+- [Electron](https://www.electronjs.org/) - Framework for building cross-platform desktop applications with web technologies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgements
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Create React App](https://create-react-app.dev/) - Official React project boilerplate.
+- [Electron Forge](https://www.electronforge.io/) - Toolkit for building modern Electron applications.
